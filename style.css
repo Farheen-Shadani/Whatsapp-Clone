@@ -1,0 +1,295 @@
+body, #mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin: 0;
+    font-family: arial, sans-serif-light, sans-serif;
+}
+
+#mobileView {
+    margin: 0;
+    padding: 0px;
+    background-color: #075e55;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    display: none;
+}
+
+#desktop {
+    color: #fffcfd;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2cbda5;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.searchOptions, nav, .icons {
+    margin: 0em 1em;
+    display: flex;
+    color: #fffcfd;
+    justify-content: flex-end;
+}
+
+.searchOptions {
+    justify-content: space-between;
+}
+
+.icons i {
+    font-size: 1.2em;
+    margin: 0em 0em 0em 1.5em;
+}
+
+.searchOptions p {
+    font-size: 1.5em;
+}
+
+#desktop p {
+    margin: 0.3em 1em;
+    font-size: 1.1em;
+}
+
+#mobileView i, #desktop i {
+    align-self: center;
+}
+
+nav {
+    justify-content: space-around;
+}
+
+nav i {
+    font-size: 1.5em;
+}
+
+nav p {
+    padding: 0em;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.chat {
+    padding: 0em 2em;
+    margin-bottom: 0px;
+    border-bottom: 4px solid #fffcfd;
+}
+
+ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    width: 100%;
+}
+
+ul {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h3 {
+    padding: 0px;
+    font-size: 0.9em;
+    color: #202020;
+}
+
+.messages {
+    color: #939393;
+    margin: 0em 1.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(212, 208, 208);
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.info, .details {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    padding: 0px;
+    margin: 0em;
+    height: 70px;
+    width: 90px;
+    border: 1px solid transparent;
+    border-radius: 100%;
+}
+
+.text {
+    padding: 0px;
+    font-size: 0.9em;
+}
+
+.time {
+    padding: 0px;
+    font-size: 0.7em;
+}
+
+.numb {
+    align-self: center;
+    font-size: 0.7em;
+    color: #cff6e5;
+    padding: 0.5em 0.6em;
+    background-color: #07d260;
+    border: 0px solid #07d260;
+    border-radius: 100%;
+}
+
+footer {
+    display: none;
+    align-self: flex-end;
+    margin: 0em 1.5em;
+    width: 60px;
+    position: sticky;
+    bottom: 0;
+    right: 0;
+}
+
+footer i {
+    background-color: #07d260;
+    color: #fefdfd;
+    font-size: 1.3em;
+    padding: 0.7em 0.9em;
+    border: 0px solid #07d260;
+    border-radius: 100%;
+}
+
+#desktopMain {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: space-between;
+}
+
+#leftPanel, #rightPanel {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#leftPanel {
+    width: 30%;
+}
+
+#rightPanel {
+    background-color: #f7f9fa;
+    color: #969fa3;
+    width: 70%;
+    height: 95vh;
+    text-align: center;
+    position: sticky;
+    top: 2rem;
+    z-index: 0;
+}
+
+#rightPanel img {
+    height: 250px;
+    width: 250px;
+}
+
+.searchBar {
+    width: 100%;
+    padding: 0.8em 0em;
+    background-color: #eeeeee;
+    position: sticky;
+    top: 2rem;
+}
+
+button {
+    margin: 0em 1em;
+    text-align: start;
+    color: #d6dada;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    border-radius: 20px;
+    background-color: white;
+}
+
+input {
+    color: #e3ebeb;
+    margin-left: 1em;
+    border: none;
+}
+
+div {
+    padding: 0px;
+}
+
+@media screen and (max-width: 1000px) {
+    #desktop, .searchBar, #rightPanel {
+        display: none;
+    }
+    #leftPanel {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    #mobile, #mobileView {
+        width: 100%;
+        display: flex;
+    }
+    footer {
+        display: block;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+    img {
+        margin: 0em 0em 0em 1.5em;
+        height: 80px;
+        width: 96px;
+    }
+    .text {
+        font-size: 1.2em;
+    }
+    .time {
+        font-size: 1em;
+    }
+    .numb {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .chat {
+        padding: 0em 1em;
+    }
+    img {
+        height: 60px;
+        width: 72px;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    .text {
+        font-size: 1em;
+    }
+    .time {
+        font-size: 0.9em;
+    }
+    .numb {
+        font-size: 0.8em;
+    }
+}
