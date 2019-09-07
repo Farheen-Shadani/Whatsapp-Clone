@@ -20,11 +20,10 @@ axios.get('https://tk-whatsapp.herokuapp.com/messages')
                 </div>
             </li>
             `;
-            // if (this.numbUnread >= 0) {
-            //     document.querySelector('.time').style.color = "#07d260";
-            // } else {
-            //     document.querySelector('.numb').style.display = "none";
-            // };
+//             if (message.isUnread == false) {
+//                 document.querySelector('.time').style.color = "#07d260";
+//                 document.querySelector('.numb').style.display = "none";
+//             };
         }
     }
     )
